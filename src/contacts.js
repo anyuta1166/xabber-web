@@ -3853,10 +3853,10 @@ define("xabber-contacts", function () {
                 if (jid === this.account.get('jid')) {
                     return;
                 }
-                var contact = this.contacts.mergeContact(jid);
-                var subscription = item.getAttribute("subscription");
+                var contact = this.contacts.mergeContact(jid),
+                    subscription = item.getAttribute("subscription");
                 if (contact.get('invitation') && (subscription === 'both' || subscription === 'to')) {
-                    contact.set('invitation', false);
+                    contact.set({'invitation': false, 'is_accepted': true});
                     contact.trigger('remove_invite');
                 }
                 if (subscription === 'remove') {

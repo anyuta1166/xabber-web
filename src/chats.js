@@ -5467,7 +5467,7 @@ define("xabber-chats", function () {
             let invitations = view.content.$('.auth-request');
             if (invitations.length > 0) {
                 invitations.each(function (idx, item) {
-                    view.model.messages.get($(item).attr('msgid')).destroy();
+                    view.model.messages.get($(item).attr('msgid')).set('is_unread', false).destroy();
                     view.content.removeMessage($(item));
                 }.bind(this));
             }
@@ -7579,7 +7579,7 @@ define("xabber-chats", function () {
                     if (view.model.get('is_accepted') != false)
                         view.content.bottom.focusOnInput();
                     let last_msg = view.model.messages.last();
-                    if (last_msg.get('type') === 'system')
+                    if (last_msg && last_msg.get('type') === 'system')
                         view.model.sendMarker(last_msg.get('msgid'), 'displayed', last_msg.get('archive_id'), last_msg.get('contact_archive_id'));
                 }
             }
