@@ -102,9 +102,9 @@ var constants = {
     NON_ROSTER_GROUP_ID: 2,
 
     ACCOUNT_COLORS: [
-        "red", "green", "blue", "deep-purple", "orange", "lime",
-        "pink", "purple", "indigo", "light-blue", "cyan", "teal",
-        "light-green", "amber", "deep-orange", "brown", "blue-grey"
+        "light-green", "blue", "deep-purple", "orange", "lime", "pink",
+        "purple", "indigo", "light-blue", "cyan", "teal", "green",
+        "red", "amber", "deep-orange", "brown", "blue-grey"
     ],
 
     MAX_AVATAR_FILE_SIZE: 20000000,

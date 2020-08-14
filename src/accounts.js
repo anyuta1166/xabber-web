@@ -1073,7 +1073,7 @@ define("xabber-accounts", function () {
                         return colors[idx];
                     }
                 }
-                return 'red';
+                return 'light-green';
             },
 
             moveBefore: function (acc1, acc2) {
