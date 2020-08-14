@@ -1345,7 +1345,6 @@ define("xabber-accounts", function () {
 
             updateButtons: function () {
                 var connected = this.model.isConnected();
-                this.$('.btn-vcard-edit').showIf(connected);
                 this.$('.btn-vcard-refresh').showIf(connected);
             },
 
