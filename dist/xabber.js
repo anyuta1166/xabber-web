@@ -50837,7 +50837,6 @@ define("xabber-accounts", [],function () {
 
             events: {
                 "change .main-info-wrap .circle-avatar input": "changeAvatar",
-                "click .main-info-wrap .status": "openChangeStatus",
                 "click .settings-tabs-wrap .settings-tab": "jumpToBlock",
                 "click .settings-tab.delete-account": "deleteAccount"
             },
