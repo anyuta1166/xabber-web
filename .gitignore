@@ -5,4 +5,4 @@ npm-ready
 .idea
 !example_index.html
 !example_dev.html
-
+package-lock.json
